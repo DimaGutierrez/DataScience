@@ -74,3 +74,68 @@ with open(FILE_PATH, 'rb') as f:
 server.quit()
 ```
 This script uses the `smtplib` library to send an email with an attached file. This type of script is useful for automating the task of sending reports or data to colleagues or clients.
+
+# Examples
+
+## 1. Datos meteorológicos
+```Ruby
+import requests
+import json
+
+url = 'https://api.openweathermap.org/data/2.5/weather?q=London&appid=API_KEY'
+response = requests.get(url)
+
+if response.status_code == 200:
+    data = json.loads(response.text)
+    temperatura = data['main']['temp']
+    presion = data['main']['pressure']
+    humedad = data['main']['humidity']
+    print('La temperatura en Londres es', temperatura, 'K')
+    print('La presión atmosférica en Londres es', presion, 'hPa')
+    print('La humedad en Londres es', humedad, '%')
+else:
+    print('No se pudo obtener los datos meteorológicos')
+```
+En este ejemplo, se utiliza la API de OpenWeatherMap para obtener los datos meteorológicos de Londres. Se utiliza la biblioteca requests para enviar una solicitud HTTP a la API y la biblioteca json para analizar la respuesta JSON.
+
+## 2. Datos de criptomonedas
+```Ruby
+import requests
+import json
+
+url = 'https://api.coinmarketcap.com/v1/ticker/?limit=10'
+response = requests.get(url)
+
+if response.status_code == 200:
+    data = json.loads(response.text)
+    for moneda in data:
+        nombre = moneda['name']
+        precio = moneda['price_usd']
+        capitalizacion = moneda['market_cap_usd']
+        print(nombre, 'tiene un precio de', precio, 'USD y una capitalización de mercado de', capitalizacion, 'USD')
+else:
+    print('No se pudo obtener los datos de criptomonedas')
+```
+En este ejemplo, se utiliza la API de CoinMarketCap para obtener los datos de las 10 criptomonedas más populares. Se utiliza la biblioteca requests para enviar una solicitud HTTP a la API y la biblioteca json para analizar la respuesta JSON.
+
+## 3. Datos de noticias
+```Ruby
+import requests
+import json
+
+url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=API_KEY'
+response = requests.get(url)
+
+if response.status_code == 200:
+    data = json.loads(response.text)
+    for noticia in data['articles']:
+        titulo = noticia['title']
+        descripcion = noticia['description']
+        url = noticia['url']
+        print(titulo)
+        print(descripcion)
+        print(url)
+else:
+    print('No se pudo obtener los datos de noticias')
+```
+En este ejemplo, se utiliza la API de NewsAPI para obtener las principales noticias de EE. UU. Se utiliza la biblioteca requests para enviar una solicitud HTTP a la API y la biblioteca json para analizar la respuesta JSON.
