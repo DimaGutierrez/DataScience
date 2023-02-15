@@ -2,7 +2,7 @@
 5 Scripts
 
 ## 1. A script that automatically downloads data from an API: `API_kotlin.py`
-```
+```Ruby
 import requests
 import json
 
@@ -14,7 +14,7 @@ print(data)
 This script uses the `requests` library to send an HTTP request to an API and the json library to parse the JSON response.
 
 ## 2. A script that reads data from a CSV file and converts it to a Pandas dataframe: `csv_kotlin.py`
-```
+```Ruby
 import pandas as pd
 
 data = pd.read_csv('data.csv')
@@ -24,7 +24,7 @@ print(df.head())
 This script uses the `pandas` library to read data from a CSV file and convert it into a Pandas dataframe, which is a useful data structure for data analysis.
 
 ## 3. A script that uses the Scikit-learn library to create a linear regression model: `scss.py`
-```
+```Ruby
 from sklearn.linear_model import LinearRegression
 import pandas as pd
 
@@ -38,7 +38,7 @@ print(model.coef_)
 This script uses the `Scikit-learn` library to create a linear regression model and fit it to the data.
 
 ## 4. A script that uses the Matplotlib library to create a bar chart: `matplotlib.py`
-```
+```Ruby
 import matplotlib.pyplot as plt
 
 x = [1, 2, 3, 4, 5]
@@ -50,7 +50,7 @@ plt.show()
 This script uses the `Matplotlib` library to create a simple bar chart.
 
 ## 5. A script that automates the task of sending an email with an attachment: `send_mail.py`
-```
+```Ruby
 import smtplib
 import os
 
