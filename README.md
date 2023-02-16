@@ -1,5 +1,5 @@
 # DataScience
-🐍 Python Scripts
+🐍 Python Scripts for query methods
 
 ## 1. A script that automatically downloads data from an API: `API_kotlin.py`
 ```Ruby
