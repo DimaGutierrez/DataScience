@@ -139,3 +139,4 @@ else:
     print('No se pudo obtener los datos de noticias')
 ```
 En este ejemplo, se utiliza la API de NewsAPI para obtener las principales noticias de EE. UU. Se utiliza la biblioteca requests para enviar una solicitud HTTP a la API y la biblioteca json para analizar la respuesta JSON.
+   
