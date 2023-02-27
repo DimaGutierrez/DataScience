@@ -143,5 +143,4 @@ En este ejemplo, se utiliza la API de NewsAPI para obtener las principales notic
 ```
 |
 
-
 ```
