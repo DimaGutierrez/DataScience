@@ -141,9 +141,10 @@ else:
 En este ejemplo, se utiliza la API de NewsAPI para obtener las principales noticias de EE. UU. Se utiliza la biblioteca requests para enviar una solicitud HTTP a la API y la biblioteca json para analizar la respuesta JSON.
 
 ```python
-|
+
 ```
 ## From scratch 
 [Scratschpads.pdf](https://github.com/DimaGutierrez/DataScience/blob/main/Scratchpads.pdf)
 ### Files
 `databases.py` `logistic_regression.py` `neural_networks.py` `statistics.py` `network_analysis.py`
+ 
