@@ -144,5 +144,6 @@ En este ejemplo, se utiliza la API de NewsAPI para obtener las principales notic
 |
 ```
 ## From scratch 
-[Scratschpads.pdf](https://github.com/DimaGutierrez/DataScience/blob/main/Scratchpads.pdf).
+[Scratschpads.pdf](https://github.com/DimaGutierrez/DataScience/blob/main/Scratchpads.pdf)
+##
 `databases.py` `logistic_regression.py` `neural_networks.py` `statistics.py` `network_analysis.py`
